@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nandini Bhardwaj — Academic Journey</title>
+
+  <!-- Classic, scholarly fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #1c140e;
+      --panel: #2a211a;
+      --paper: #3b2e22;
+      --ink: #e8e2d9;
+      --accent: #c9a36b;
+      --muted: #b9a889;
+      --radius: 10px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Crimson Text', serif;
+      background: var(--bg) url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+      background-attachment: fixed;
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: var(--panel);
+      border-bottom: 1px solid #4d3f32;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+
+    header .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      font-family: 'Playfair Display', serif;
+      transition: color .3s;
+    }
+    nav a:hover { color: var(--accent); }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 80px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .section:nth-child(even) { flex-direction: row-reverse; }
+
+    .section img {
+      width: 48%;
+      height: 340px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      border: 3px solid #4a3a29;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      filter: brightness(0.85);
+      transition: transform .5s ease, filter .5s ease;
+    }
+    .section img:hover {
+      transform: scale(1.03);
+      filter: brightness(1);
+    }
+
+    .text-block {
+      width: 48%;
+      background: var(--paper);
+      padding: 30px;
+      border-radius: var(--radius);
+      border: 1px solid #5c4c3b;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+      transition: transform .3s ease;
+    }
+    .text-block:hover { transform: translateY(-6px); }
+
+    .text-block h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--accent);
+      font-size: 26px;
+      margin-top: 0;
+    }
+
+    .text-block p {
+      font-size: 18px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--panel);
+      border-top: 1px solid #4d3f32;
+      font-size: 14px;
+      color: var(--muted);
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+    }
+
+    @media(max-width: 800px) {
+      .section { flex-direction: column !important; }
+      .section img, .text-block { width: 100%; }
+      .section img { height: 250px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">NB</div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="page1.html">ARTS</a>
+      <a href="page2.html">STEM</a>
+      <a href="page3.html">ACADEMIA</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <div class="section">
+      <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=1200" alt="Books and Candlelight">
+      <div class="text-block">
+        <h2>Debate and Extempore</h2>
+        <p>There is a certain thrill in speaking without a sheet of paper drilled into one's brain. It's a kind of outlet which shapes one's views and truly opens their eyes to their own thoughts and views.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="./images/img2.jpg" alt="Typewriter and Notes">
+      <div class="text-block">
+        <h2>The Scholar’s Rest</h2>
+        <p>12 years of my school journey that I look back to, laden in scholastic achievements. A throwback to every medal that motivated me to do better.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="./images/img1.jpg" alt="Old Library Interior">
+      <div class="text-block">
+        <h2>Olympiads</h2>
+        <p>And what's without Olympiads? The bright and enthusiastic days of storming questions with friends. Cherry on top if the end prize is an award. One good time I recall is being in the top 15 of zonal awardees and being given the zonal excellency award in Science Olypiad by SOF in my 11th grade.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="https://images.unsplash.com/photo-1473186505569-9c61870c11f9?q=80&w=1200" alt="Ink and Journal">
+      <div class="text-block">
+        <h2>Ink & Silence</h2>
+        <p>Words always amaze me and so the last hgihlight for my academic journey has to be my poetry collection and essay competitons as well being labelled the top reader at my school graduation.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    © <span id="year"></span> Nandini Bhardwaj — Academic Journey
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

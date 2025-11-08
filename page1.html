@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nandini Bhardwaj — Gallery Story</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --orange: #ff9b4a;
+      --pink: #ff7ca8;
+      --text: #2b2b2b;
+      --card: rgba(255, 255, 255, 0.85);
+      --radius: 14px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: url('./images/art.jpg') center/cover fixed;
+      color: var(--text);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: linear-gradient(90deg, var(--orange), var(--pink));
+      color: #fff;
+    }
+
+    header .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 80px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .section img {
+      width: 48%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .text-block {
+      width: 48%;
+      background: var(--card);
+      padding: 30px;
+      border-radius: var(--radius);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-block h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--orange);
+      margin-top: 0;
+      font-size: 28px;
+    }
+
+    .text-block p {
+      font-size: 17px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.6);
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media(max-width: 800px) {
+      .section {
+        flex-direction: column !important;
+      }
+      .section img,
+      .text-block {
+        width: 100%;
+      }
+      .section img {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">NB</div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="page1.html">ARTS</a>
+      <a href="page2.html">STEM</a>
+      <a href="page3.html">ACADEMIA</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <img src="./images/gif1.jpg" alt="sketch">
+      <div class="text-block">
+        <h2>The Pianist</h2>
+        <p>It's adoration, affection and appreciation wrapped in a gaze. The blurred face admiring the pianist can be anyone (even we ourselves).</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="./images/gif2.jpg" alt="Morning landscape">
+      <div class="text-block">
+        <h2>The Bird On Fire</h2>
+        <p>A sketch that for me feels like a recreation of the phrase "Moth to a flame".</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="./images/gif3.jpg" alt="Abstract art">
+      <div class="text-block">
+        <h2>The Fallen Angelx</h2>
+        <p>It is meant to represent grief, the longing to be as bright as one once was but struggles to achieve anymore. The longing to be as good as we once were.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="./images/gif4.jpg" alt="Still life">
+      <div class="text-block">
+        <h2>The Meaning Of A Lily</h2>
+        <p>It is self explanatory. We all love lilies!</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="./images/gif5.jpg" alt="Morning landscape">
+      <div class="text-block">
+        <h2>The Duality of Butterfly And Snake</h2>
+        <p>This sketch represents for me, the duality that exists in all of us, the two sides of a coin in every situation, in every existence.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="./images/gif6.jpg" alt="Morning landscape">
+      <div class="text-block">
+        <h2>The Devil Incarnate</h2>
+        <p>This truly has to be my favourite piece. For me, it represents courage and defiance even while looking at defeat.</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer>
+    © <span id="year"></span> Nandini Bhardwaj — Oil & Light
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

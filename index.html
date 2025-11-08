@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nandini Bhardwaj — Art Portfolio</title>
+  <meta name="description" content="Interactive art portfolio for Nandini Bhardwaj — paintings, sketches, and digital art." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css"/>
+
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">NB</div>
+        <div>
+          <div style="font-weight:700">Nandini Bhardwaj</div>
+          <div style="font-size:12px;color:var(--muted)">Literature · Sketch Artist · Digital</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home" class="navlink active">Home</a>
+        <a href="#gallery" class="navlink">Gallery</a>
+        <a href="#about" class="navlink">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">More ▾</button>
+          <div class="dropdown-content">
+             <a href="page1.html">ARTS</a>
+             <a href="page2.html">STEM</a>
+             <a href="page3.html">ACADEMIA</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div>
+        <h1>My Space</h1>
+        <p>Welcome — I'm Nandini. I explore painting, sketches, coding and literature, though you can find me exploring something new every other week!</p>
+      </div>
+      <aside class="featured">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1400&auto=format&fit=crop" alt="Featured artwork">
+        <div style="padding:12px"><div style="font-weight:700">Featured — Morning Light</div><div style="color:var(--muted);font-size:13px">Oil on canvas · 2025</div></div>
+      </aside>
+    </section>
+
+    <section id="gallery">
+      <h2 style="font-family:'Playfair Display'">Gallery</h2>
+      <div class="gallery">
+        <figure class="card" data-category="painting" data-full="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1800">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800" alt="Morning landscape">
+          <figcaption class="meta"><h3>Morning Landscape</h3><p>Oil on canvas · 2024</p></figcaption>
+        </figure>
+        <figure class="card" data-category="sketch" data-full="https://images.unsplash.com/photo-1526318472351-c75fcf070a6c?q=80&w=1800">
+          <img src="./images/gif6.jpg" alt="Charcoal portrait">
+          <figcaption class="meta"><h3>Charcoal Portrait</h3><p>Charcoal on paper · 2023</p></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 style="font-family:'Playfair Display'">About</h2>
+      <p>Hello — I'm Nandini, a university student, exploring my interests, be it art, music, coding or maths. Explore my website and feel free to contact if something interests you! <br>
+      E-mail Address: nandini020806@gmail.com
+      </p>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Nandini Bhardwaj · All rights reserved</div>
+    </footer>
+  </div>
+
+  <script>
+    document.querySelector('#year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

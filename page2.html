@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nandini Bhardwaj — STEM Experience</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --neon-blue: #00c6ff;
+      --neon-pink: #ff4ecd;
+      --card-bg: rgba(25, 25, 35, 0.75);
+      --text-light: #e6e6e6;
+      --radius: 14px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: url('./images/page2.jpg') center/cover fixed;
+      color: var(--text-light);
+      overflow-x: hidden;
+    }
+
+    /* Animated gradient “tech funk” backdrop */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(135deg, var(--neon-blue), var(--neon-pink));
+      opacity: 0.15;
+      animation: pulse 6s ease-in-out infinite alternate;
+      z-index: -1;
+      filter: blur(100px);
+    }
+    @keyframes pulse {
+      from { transform: translateY(-20px) scale(1.05); }
+      to { transform: translateY(20px) scale(0.95); }
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(15, 15, 25, 0.9);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    header .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(90deg,var(--neon-blue),var(--neon-pink));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      transition: color .3s;
+    }
+    nav a:hover { color: var(--neon-pink); }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 80px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .section:nth-child(even) { flex-direction: row-reverse; }
+
+    .section img {
+      width: 48%;
+      height: 340px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      box-shadow: 0 0 25px rgba(255,255,255,0.1);
+      transition: transform .5s, box-shadow .5s;
+    }
+    .section img:hover {
+      transform: scale(1.05) rotate(-1deg);
+      box-shadow: 0 0 35px var(--neon-pink);
+    }
+
+    .text-block {
+      width: 48%;
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 0 25px rgba(0,0,0,0.3);
+      backdrop-filter: blur(8px);
+      transition: transform .3s;
+    }
+    .text-block:hover { transform: translateY(-6px); }
+
+    .text-block h2 {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(90deg,var(--neon-blue),var(--neon-pink));
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-top: 0;
+      font-size: 26px;
+    }
+
+    .text-block p {
+      font-size: 17px;
+      color: #ccc;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(15,15,25,0.9);
+      font-size: 14px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    @media(max-width: 800px) {
+      .section { flex-direction: column !important; }
+      .section img, .text-block { width: 100%; }
+      .section img { height: 250px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">NB</div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="page1.html">ARTS</a>
+      <a href="page2.html">STEM</a>
+      <a href="page3.html">ACADEMIA</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <div class="section">
+      <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=1200" alt="AI Circuit Art">
+      <div class="text-block">
+        <h2>Hackathon</h2>
+        <p>My Tech journey, safe to say, has only started after joining college. And the first milestone to mark it off was the overnight hackathon held on campus by ACM Student Chapter.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200" alt="Digital Geometry">
+      <div class="text-block">
+        <h2>AC Heat to Electricity Project</h2>
+        <p>In an Innovation inter-school competition, I worked with few of my classmates to build a prototype of a machine that can be used to convert dissipated AC heat energy into electrical energy.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200" alt="Futuristic City">
+      <div class="text-block">
+        <h2>Mathlete</h2>
+        <p>Ever since being introduced to advance mathematics, I have found a certain fascination with it. And step by step, I have taken part in many math exclusive as well as inclusive contests. It's a journey of learning and achieving that I want to continue doing.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="./images/Java Programming Language.jpg" alt="Data Stream">
+      <div class="text-block">
+        <h2>C, JavaScript, HTML, CSS</h2>
+        <p>And my last highlight will certainly be, everything I have learned in the span of 4 months since starting college. From being a complete amateur in coding to learning basics of C, JavaScript and a sprinkle of front end web development. It has been an exciting journey and I am striving to learn more.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    © <span id="year"></span> Nandini Bhardwaj — STEM Experience
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
